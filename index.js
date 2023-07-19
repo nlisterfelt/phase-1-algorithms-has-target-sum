@@ -1,5 +1,14 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for(let i=0; i<array.length-1; i++){
+    for(let j=i+1; j<array.length; j++){
+      const sum = array[i]+array[j]
+      console.log(sum + ' ' +target)
+      if(sum===target) {
+        return true
+      }
+    }
+  }
+  return false
 }
 
 /* 
@@ -8,6 +17,10 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  -Get array length
+  -for loop starting with first element and iterating through length-1
+  -for loop inside other for loop to check the rest of the elements added to the other element
+  -check sum to target
 */
 
 /*
