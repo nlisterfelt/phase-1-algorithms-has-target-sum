@@ -2,7 +2,6 @@ function hasTargetSum(array, target) {
   for(let i=0; i<array.length-1; i++){
     for(let j=i+1; j<array.length; j++){
       const sum = array[i]+array[j]
-      console.log(sum + ' ' +target)
       if(sum===target) {
         return true
       }
@@ -13,6 +12,8 @@ function hasTargetSum(array, target) {
 
 /* 
   Write the Big O time complexity of your function here
+  runtime O(n**2)
+  space O(n)
 */
 
 /* 
